@@ -1,3 +1,16 @@
 TODO
 
-[ ] - some todo
+[ ] - add spell checker in frontend so that user is able to correct 
+	their spelling mistake
+[ ] - construct models architecture for User input logging (correct/incorrect)
+	responses
+ 	sentense
+	verbs
+	tenses
+	vocabulary
+	MCQ type question-answers
+	
+
+[[[ vim ]]]
+[ ] - n and N center screen
+[ ] - up and down scroll with center screen
