@@ -14,3 +14,5 @@ TODO
 [[[ vim ]]]
 [ ] - n and N center screen
 [ ] - up and down scroll with center screen
+[ ] - u for undo, some times goes to jump location, instead of where the edit actually
+	happened

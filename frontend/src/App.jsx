@@ -1,35 +1,70 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from 'react'
+import { Vocabulary } from '../../vocabulary'
+import { Login } from '../../login'
+import { Button, Checkbox, Form, Input } from 'antd';
+
+const loginValidations = Login?.validations;
 
 function App() {
-  const [count, setCount] = useState(0)
+	const fetchWords = async () => {
+		const response = await Vocabulary.list();
+		if (!response?.success) {
+			console.log("Failed to fetch words")
+			return;
+		}
+		console.log(`Words Fetched: ${response?.data}`);
+	}
 
-  return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
+	const fetchToken = async (queryData) => {
+		const response = await Login.post(queryData);
+		if (!response?.success) {
+			console.log("Failed to fetch token")
+			return;
+		}
+		localStorage.setItem("access", response?.data?.access);
+		localStorage.setItem("refresh", response?.data?.refresh);
+	}
+
+	const onSubmitFailed = errorInfo => {
+		console.log('Failed:', errorInfo);
+	};
+
+	return (
+		<>
+			<Form
+				name="basic"
+				labelCol={{ span: 8 }}
+				wrapperCol={{ span: 16 }}
+				style={{ maxWidth: 600 }}
+				initialValues={{ remember: true }}
+				onFinish={fetchToken}
+				onFinishFailed={onSubmitFailed}
+				autoComplete="off"
+			>
+				<Form.Item
+					label="Username"
+					name="username"
+					rules={loginValidations?.username}
+				>
+					<Input />
+				</Form.Item>
+
+				<Form.Item
+					label="Password"
+					name="password"
+					rules={loginValidations?.password}
+				>
+					<Input.Password />
+				</Form.Item>
+
+				<Form.Item label={null}>
+					<Button type="primary" htmlType="submit">
+						Submit
+					</Button>
+				</Form.Item>
+			</Form>
+		</>
+	);
 }
 
-export default App
+export default App;
