@@ -15,10 +15,22 @@ English Learning App
 - [x] task1
 - [ ] task2
 - [x] task3
+- [x] task4
 
-Here is a statement.[^1]
+Here[^1] is a statement.[^2]
+Here[^3] is a statement.[^4]
 
 [^1]: This is the footnote.
+[^2]: This is this another footnote.
+[^3]: This is this another footnote.
+[^4]: This is this another footnote.
+
+Term
+: Definition of the term
+
+Another Term
+: The definition for the other term
+
 
 
 ## Code
