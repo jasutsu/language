@@ -6,6 +6,36 @@ English Learning App
 ## More examples on Mermaid
 
 ```mermaid
+---
+title: hello word
+---
+flowchart LR
+    A:::foo & B:::bar --> C:::foobar
+    classDef foo stroke:#f00
+    classDef bar stroke:#0f0
+    classDef foobar stroke:#00f
+```
+
+```mermaid
+graph LR
+    id1(Start)-->id2(Stop)
+    style id1 fill:#f9f,stroke:#333,stroke-width:4px
+    style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+```
+
+```mermaid
+graph LR;
+    subgraph one
+    a --> b
+    end
+    subgraph two
+    c --> d
+    end
+    a e1@--> c
+    e1@{ curve: linear }
+```
+
+```mermaid
 graph TD;
     A[Start] --> B{Is it?}
     B -- Yes --> C[OK]
