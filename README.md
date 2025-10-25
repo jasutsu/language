@@ -6,11 +6,26 @@ English Learning App
 ## More examples on Mermaid
 
 ```mermaid
+graph TD;
+    A[Start] --> B{Is it?}
+    B -- Yes --> C[OK]
+    C --> D[Rethink]
+    D --> B
+    B -- No ----> E[End]
+```
+
+```mermaid
+graph LR;
+    A o--o B
+    B <--> C
+    C x--x D
+```
+
+```mermaid
 graph TD
     A & B --> C & D
     D e1@==> E
     e1@{ animate: true }
-
 ```
 
 ```mermaid
