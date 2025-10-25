@@ -3,7 +3,7 @@ English Learning App
 
 <!-- ![Benjamin Bannekat](bannekat.png) -->
 
-## Advanced
+## Advanced title here
 ~~Struck Text~~
 
 | col1 | col2 | co3 |
@@ -31,7 +31,7 @@ Term
 Another Term
 : The definition for the other term
 
-some [id](#custom-id)
+some [id](#language-custom-id)
 
 
 ## Code
