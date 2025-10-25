@@ -14,6 +14,10 @@ hello
 [ ] - okay
 [ ] - _okay_
 
+```
 graph TD;
-Start-->Choice1;
-Choice1-->End;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
