@@ -3,6 +3,52 @@ English Learning App
 
 <!-- ![Benjamin Bannekat](bannekat.png) -->
 
+## More examples on Mermaid
+
+```mermaid
+graph TD;
+    A[Player enters in the bar]
+    B[Player drinks]
+    C[Player fights]
+    D[Player exits the bar]
+
+    A --> B
+    A --> C
+    B --> D
+    C --> D
+```
+
+```mermaid
+graph LR;
+    id[Some text in the box]
+    B[hello]
+
+    id --> B
+    C --> B
+```
+
+***
+
+```mermaid
+graph LR;
+    A --> B
+    C --> B
+```
+
+```mermaid
+graph TD;
+    A --> B
+    C --> B
+```
+
+```mermaid
+graph TD;
+    Player_Enters --> Player_Drinks;
+    Player_Enters --> Player_Fights;
+    Player_Fights --> Player_Exits;
+    Player_Drinks --> Player_Exits;
+```
+
 ## Advanced title here
 ==Highlighted Text==  
 ~~Struck Text~~
