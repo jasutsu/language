@@ -6,6 +6,38 @@ English Learning App
 ## More examples on Mermaid
 
 ```mermaid
+    graph LR;
+    1 --> 2
+    2 --> 3
+    3 --> 4
+    4 --> 5
+    5 --> 6
+    6 --> 7
+    7 --> 8
+    8 --> 9
+    9 --> 10
+    10 --> 11
+    11 --> 12
+    12 --> 13
+```
+
+```mermaid
+    graph TD;
+    1 --> 2
+    2 --> 3
+    3 --> 4
+    4 --> 5
+    5 --> 6
+    6 --> 7
+    7 --> 8
+    8 --> 9
+    9 --> 10
+    10 --> 11
+    11 --> 12
+    12 --> 13
+```
+
+```mermaid
 graph TD;
     A[Player enters in the bar]
     B[Player drinks]
