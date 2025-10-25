@@ -4,6 +4,7 @@ English Learning App
 <!-- ![Benjamin Bannekat](bannekat.png) -->
 
 ## Advanced title here
+==Highlighted Text==  
 ~~Struck Text~~
 
 | col1 | col2 | co3 |
