@@ -16,6 +16,11 @@ English Learning App
 - [ ] task2
 - [x] task3
 
+Here is a statement.[^1]
+
+[^1]: This is the footnote.
+
+
 ## Code
 
 I strongly recommend against using any `<blink>` tags.
