@@ -6,6 +6,18 @@ English Learning App
 ## More examples on Mermaid
 
 ```mermaid
+gantt
+    title A Gantt Diagram
+    dateFormat YYYY-MM-DD
+    section Section
+        A task          :a1, 2014-01-01, 30d
+        Another task    :after a1, 20d
+    section Another
+        Task in Another :2014-01-12, 12d
+        another task    :24d
+```
+
+```mermaid
 block
   columns 3
   a:3
