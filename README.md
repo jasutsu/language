@@ -3,6 +3,19 @@ English Learning App
 
 <!-- ![Benjamin Bannekat](bannekat.png) -->
 
+## Advanced
+~~Struck Text~~
+
+| col1 | col2 | co3 |
+|-|-|-|
+| 1 | john | male |
+| 2 | mike | male |
+| 3 | vanessa | female |
+
+- [x] task1
+- [ ] task2
+- [x] task3
+
 ## Code
 
 I strongly recommend against using any `<blink>` tags.
