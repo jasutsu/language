@@ -6,6 +6,35 @@ English Learning App
 ## More examples on Mermaid
 
 ```mermaid
+mindmap
+  root((mindmap))
+    Origins
+      Long history
+      ::icon(fa fa-book)
+      Popularisation
+        British popular psychology author Tony Buzan
+    Research
+      On effectiveness<br/>and features
+      On Automatic creation
+        Uses
+            Creative techniques
+            Strategic planning
+            Argument mapping
+    B
+        A
+            F
+                G
+                H
+                I
+        C
+            D
+            E
+    Tools
+      Pen and paper
+      Mermaid
+```
+
+```mermaid
 ---
 title: hello word
 ---
