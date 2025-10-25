@@ -34,8 +34,10 @@ The definition for the other term
 some [id](#language-custom-id)
 head to advanced [id](#advanced-title-here)
 
-:rocket:
-:smile:
+:emoji:  
+:rocket:  
+:smile:  
+:sleeping:  
 
 ## Code
 
