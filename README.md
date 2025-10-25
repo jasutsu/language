@@ -25,11 +25,11 @@ Here[^3] is a statement.[^4]
 [^3]: This is this another footnote.
 [^4]: This is this another footnote.
 
-Term
-: Definition of the term
+**Term**  
+Definition of the term
 
-Another Term
-: The definition for the other term
+**Another Term**  
+The definition for the other term
 
 some [id](#language-custom-id)
 head to advanced [id](#advanced-title-here)
