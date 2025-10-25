@@ -16,8 +16,8 @@ hello
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
+    Player Enters a bar-->Player Drinks;
+    Player Enters a bar-->Player Fights;
+    Player Fights-->Player Exits;
+    Player Drinks-->Player Exits;
 ```
