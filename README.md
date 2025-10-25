@@ -14,7 +14,7 @@ hello
 [ ] - okay
 [ ] - _okay_
 
-```
+```mermaid
 graph TD;
     A-->B;
     A-->C;
